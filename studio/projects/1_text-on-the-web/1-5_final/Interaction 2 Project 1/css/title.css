@@ -1,0 +1,41 @@
+body {
+	background: black;
+	font-family: 'Formula1', sans-serif;
+
+}
+
+@font-face {
+	font-family: 'Formula1', sans-serif;
+	src: url('/fonts/Formula1-Display-Regular.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+  }
+
+  svg {
+	font-family: 'Formula1', sans-serif;
+	position: absolute; 
+	width: 100%; height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+svg text {
+	text-transform: uppercase;
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: white;
+	font-size: 150px;
+	font-weight: bold;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,20,0); stroke: white;
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,20,0); stroke: white; }
+	80%  {fill: white; stroke: white; stroke-width: 3; }
+	100% {
+		fill: red; stroke: red; 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+

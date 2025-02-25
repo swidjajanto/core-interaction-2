@@ -1,0 +1,67 @@
+ /* main */
+
+html {
+	background: rgb(211, 196, 196);
+	color: white;
+	margin: 3em;
+	font-family: "Playfair Display", serif;
+}
+  
+
+h1{
+	font-size: 50px;
+	text-align: center;
+}
+
+h2{
+	font-size: 30px;
+}
+
+button{
+	font-size: 20px;
+	padding: 2em;
+	border-radius: 6em;
+	border-color: transparent;
+	background-color: rgb(182, 137, 145);
+	text-align: center;
+}
+
+a{
+	color: white;
+}
+
+ /* header */
+
+ .header {
+    overflow: hidden;
+    background-color: transparent;
+    padding: 20px 10px;
+  }
+  
+  .header a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .header a:hover {
+    background-color: white;
+    color: white;
+  }
+  
+  .header-right {
+    float: right;
+  }
+  
+
+  

@@ -1,0 +1,138 @@
+body{
+    background-color: black;
+    height: 100vh;
+    padding: 4em;
+    font-family: 'Formula1', sans-serif;
+}
+
+@font-face {
+    font-family: 'Formula1', sans-serif;
+    src: url('/fonts/Formula1-Display-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 140px);
+    gap: 15px;
+}
+
+h1{
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h2{
+    font-size: 100px;
+    line-height: 120px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.animation{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 1s linear forwards;
+    animation-timeline: view(90% 5%);
+}
+
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/*marquee scrolling text*/
+
+.title1{
+    font-size: 150px;
+    text-transform: uppercase;
+    color: red;
+    letter-spacing: 10px;
+    line-height: 150px;
+    font-weight: bold;
+    display: grid;
+    grid-column: 1 / 13;
+    grid-row: 2;
+}
+
+.title2{
+    font-size: 150px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 10px;
+    line-height: 150px;
+    font-weight: bold;
+    display: grid;
+    grid-column: 1 / 13;
+    grid-row: 3;
+}
+
+#div1 {
+        animation: marquee 5s linear infinite;
+  }
+
+/*commentary options*/
+svg {
+	font-family: 'Formula1', sans-serif;
+	position: relative; 
+	width: 100%; height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+svg text {
+	text-transform: uppercase;
+	animation: stroke 5s infinite alternate;
+    font-weight: bold;
+	stroke-width: 2;
+	stroke: white;
+	font-size: 100px;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(72,138,20,0); stroke: white;
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(72,138,20,0); stroke: white; }
+	80%  {fill: white; stroke: white; stroke-width: 3; }
+	100% {
+		fill: white; stroke: white; 
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+/*reading-progress bar*/
+
+.reading-progress-bar-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    background-color: black(19, 19, 66);
+    z-index: 999;
+}
+
+.reading-progress-bar {
+    height: 20px;
+    background-color:red;
+    animation-name: width;
+    animation-timeline: scroll(y);
+}
+
+@keyframes width {
+    from { width: 0 }
+    to { width: 100% }
+}

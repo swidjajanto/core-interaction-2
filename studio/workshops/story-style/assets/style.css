@@ -1,0 +1,68 @@
+/*general styles*/
+/* ===========================*/
+
+body{
+background-color: rgb(199, 157, 164);
+color: white;
+padding: 30px; 
+font-size: 20px;
+font-family: "Moirai One", serif;
+}
+
+::selection{
+    color:white;
+    text-shadow: 
+        0 0 10px pink,
+        0 0 10px pink,
+        0 0 20px brown,
+        0 0 20px brown;
+}
+
+/*nav*/
+/* ===========================*/
+
+.nav{
+    margin-bottom: 30px;
+    user-select: none;
+    font-family: "Playfair Display", serif;
+}
+
+.nav-link{
+    background-color: grey;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.nav-link:hover{
+    background-color: pink;
+    box-shadow:0 0 10px pink, 0 0 10px pink;
+}
+
+/*main*/
+/* ===========================*/
+.main{
+    font-size: 4rem;
+    text-align: center;
+}
+
+.home .main{
+    font-size: 10rem;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p{
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 0.05cm solid;
+    border-bottom: 0.05cm solid;
+    border-color: white;
+}

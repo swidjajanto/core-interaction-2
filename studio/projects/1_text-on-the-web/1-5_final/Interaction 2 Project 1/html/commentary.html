@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formula 1</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+
+	<!-- You will need a stylesheet titled main.css in the same folder as your .html document -->
+	<link rel="stylesheet" href="../css/commentary.css">
+    <link rel="stylesheet" href="../css/main.css">
+
+
+</head>
+<body>
+    <div class="reading-progress-bar-container">
+        <div class="reading-progress-bar"></div>
+    </div>
+    <button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button>
+    <div class="header">
+        <a href="index.html" class="logo">Formula 1</a>
+        <div class="header-right">
+          <a href="recap.html">About</a>
+          <a href="mercedez-radio.html">Hamilton</a>
+          <a href="redbull-radio.html">Verstappen</a>
+        </div>
+      </div>
+    <div class="logo-container">
+        <h1 id="page-logo">Abu Dhabi 2021</h1>
+    </div>
+    <h3>Who will win the 2021 Formula 1 Abu Dhabi Grand Prix to take the race victory and win the 2021 Drivers’ World Championship?</h3>
+    <div class="panel-buttons">
+        <button class="openbtn" onclick="openNav('mySidepanelleft')">☰</button>
+        <button class="openbtn openbtn-right" onclick="openNav('mySidepanelright')">☰</button>
+        </div>
+        <div id="mySidepanelleft" class="sidepanelleft">
+            <a href="javascript:void(0)" class="closebtnleft" onclick="closeNav('mySidepanelleft')">&times;</a>
+            <div class="main-2">
+                <h10>Hamilton Radio</h10>
+                <h11>Lap 57/58</h11>
+                <div class="text-1">
+                    <div id="text1"></div>
+                </div>
+                <div class="text-2">
+                    <div id="text2"></div>
+                </div>
+                <div class="text-3">
+                    <div id="text3"></div>
+                </div>
+                <div class="text-4">
+                    <div id="text4"></div>
+                </div>
+                <div class="text-5">
+                    <div id="text5"></div>
+                </div>
+                <div class="text-6">
+                    <div id="text6"></div>
+                </div>
+                <h11>Lap 58/58</h11>
+                <div class="text-11">
+                    <div id="text11"></div>
+                </div>
+                <div class="text-12">
+                    <div id="text12"></div>
+                </div>
+                <div class="text-13">
+                    <div id="text13"></div>
+                </div>
+                <div class="text-14">
+                    <div id="text14"></div>
+                </div>
+                <div class="text-15">
+                    <div id="text15"></div>
+                </div>
+            </div>
+        </div>
+        <div id="mySidepanelright" class="sidepanelright">
+            <a href="javascript:void(0)" class="closebtnright" onclick="closeNav('mySidepanelright')">&times;</a>
+            <div class="main-2">
+                <h10>Verstappen Radio</h10>
+                <h11>Lap 57/58</h11>
+                <div class="text-7">
+                    <div id="text7"></div>
+                </div>
+                <div class="text-8">
+                    <div id="text8"></div>
+                </div>
+                <div class="text-9">
+                    <div id="text9"></div>
+                </div>
+                <div class="text-10">
+                    <div id="text10"></div>
+                </div>
+                <h11>Lap 58/58</1>
+                <div class="text-17">
+                    <div id="text17"></div>
+                </div>
+                <div class="text-18">
+                    <div id="text18"></div>
+                </div>
+                <div class="text-19">
+                    <div id="text19"></div>
+                </div>
+                <div class="text-20">
+                    <div id="text20"></div>
+                </div>
+                <div class="text-21">
+                    <div id="text21"></div>
+                </div>
+                <div class="text-22">
+                    <div id="text22"></div>
+                </div>
+                <div class="text-23">
+                    <div id="text23"></div>
+                </div>
+                <div class="text-24">
+                    <div id="text24"></div>
+                </div>
+                <div class="text-25">
+                    <div id="text25"></div>
+                </div>
+                <div class="text-26">
+                    <div id="text26"></div>
+                </div>
+                <div class="text-27">
+                    <div id="text27"></div>
+                </div>
+                <div class="text-28">
+                    <div id="text28"></div>
+                </div>
+            </div>
+        </div>
+    <div class="autoShow">
+        <h5>The safety car is coming in at the end of this lap.</h5>
+    </div>
+    <div class="autoShow">
+        <h5>So those backmarkers are allowed to overtake the safety car.</h5>
+    </div>
+    <div class="autoShow">
+        <h5>It has left Lewis Hamilton and Max Verstappen side by side.</h5>
+    </div>
+    <div class="autoShow">
+        <h5>Hamilton will be ahead.</h5>
+    </div>
+    <div class="autoShow">
+        <h5>Verstappen is absolutely desperate to get on with this on that soft compound tire.</h5>
+    </div>
+    <div class="autoShow">
+        <h5>We are gonna have one lap of racing to decide the championship in 2021.</h5>
+    </div>
+    <div class="autoShow">
+        <h5>Hamilton has the advantage.</h5>
+    </div>
+    <section class="main">
+    <div class="tire">
+        <div class="circle">
+            <p id="text">Verstappen has the faster, fresher tires.</p>
+        </div>
+    </div>
+    </section>
+    <div class="autoShow">
+        <h5>And we’ve got 3.2 miles of racing action all the way to the chequered flag as the crowd roar the drivers on to the final lap of this race.</h5>
+    </div>
+    <div class="autoShow">
+        <h5>Verstappen sets off to Hamilton.</h5>
+    </div>
+    <div class="autoShow">
+        <h5>Is it gonna be a FIRST WORLD CHAMPIONSHIP for Verstappen?</h5>
+    </div>
+    <div class="autoShow">
+        <h5> Is it gonna be an 8TH WORLD CHAMPIONSHIP for Lewis Hamilton?</h5>
+    </div>
+    <div class="autoShow">
+        <h5>Where can Verstappen try and get past Hamilton? </h5>
+    </div>
+    <div class="autoShow">
+        <h5>The first overtaking zone is normally down to turn 5</h5>
+    </div>
+    <div class="autoShow">
+        <h5>is Verstappen far enough back?</h5>
+    </div>
+    <div class="autoShow">
+        <h5>He's gonna make the lunge down to the inside</h5>
+    </div>
+    <div class="autoShow">
+        <h5>Hamilton sees him coming</h5>
+    </div>
+    <div class="autoShow">
+        <h5>it’s a late lunge by Verstappen</h5>
+    </div>
+    <div class="autoShow">
+        <h5>who takes the lead of the race</h5>
+    </div>
+    <div class="autoShow">
+        <h5>Verstappen now snatches the championship trophy from Lewis Hamilton who’s trying to fight back.</h5>
+    </div>
+    <div class="autoShow">
+        <h5>No DRS for two laps so Lewis Hamilton will not get the rear wing open.</h5>
+    </div>
+    <div class="autoShow">
+        <h5>Now, he's gonna go down the outside,</h5>
+    </div>
+    <div class="autoShow">
+        <h5>if Verstappen keeps it tight and neat</h5>
+    </div>
+    <div class="autoShow">
+        <h5>but he hasn't</h5>
+    </div>
+    <div class="autoShow">
+        <h5>he's gone a bit wide</h5>
+    </div>
+    <div class="autoShow">
+        <h5>This race that started with controversy is ending with controversy.</h5>
+    </div>
+    <div class="autoShow">
+        <h2 class="lewis">No Mickey!</h2>
+    </div>
+    <div class="autoShow">
+        <h2 class="lewis">No Mickey, that was so not right!</h2>
+    </div>
+    <div class="autoShow">
+        <h5>Here’s Lewis Hamilton tho down the back straight.</h5>
+    </div>
+    <div class="autoShow">
+        <h5>He's got a slipstream</h2>
+    </div>
+    <div class="autoShow">
+        <h5>they almost make contact into turn 9</h5>
+    </div>
+    <div class="autoShow">
+        <h5>Verstappen stays ahead of Lewis Hamilton</h5>
+    </div>
+    <div class="autoShow">
+        <h5>Of all the drama, of all the controversy, of all the magic moments in Formula 1 in 2021</h5>
+    </div>
+    <div class="autoShow">
+        <h5>it comes down to this</h5>
+    </div>
+    <div class="autoShow">
+        <h5>and at this moment it looks like its going to go the way of Max Verstappen</h5>
+    </div>
+    <div class="autoShow">
+        <h5>Mercedez not happy</h5>
+    </div>
+    <div class="autoShow">
+        <h5>Red Bull will be delighted</h5>
+    </div>
+    <div class="autoShow">
+        <h5>They have shared a brilliant championship battle</h5>
+    </div>
+    <div class="autoShow">
+        <h5>but the championship can only be won by one,</h5>
+    </div>
+    <div class="autoShow">
+        <h5>and its going Dutch in 2021.</h5>
+    </div>
+    <div class="autoShow">
+        <h5>Max Verstappen for the first time ever is champion of the world.</h5>
+    </div>
+    <div class="autoShow">
+        <h2 class="max">OH MY LORD!!!</h2>
+    </div>
+    <div class="autoShow">
+        <h2 class="max">MAX</h2>
+    </div>
+    <div class="autoShow">
+        <h2 class="max">OH MY GOD!!!</h2>
+    </div>
+    <div class="autoShow">
+        <h2 class="max">YESSSS!!!</h2>
+    </div>
+    <div class="autoShow">
+        <h2 class="max">YESSSS!!!</h2>
+    </div>
+    <div class="autoShow">
+        <h5>You couldn’t make it up, could you?</h5>
+    </div>
+    <div class="autoShow">
+        <h5>There is going to be so much acrimony going forward now about that procedure at the end.</h5>
+    </div>
+    <div class="autoShow">
+        <h5>Red Bull played every card they could because they hadn’t got enough speed</h5>
+    </div>
+    <div class="autoShow">
+        <h5>they hadn’t got track position, they played it really smart</h5>
+    </div>
+    <div class="autoShow">
+        <h5>Mercedez played it cautious out front</h5>
+    </div>
+    <div class="autoShow">
+        <h5>but to release the lap guard and end the safety car and give us one racing lap</h5>
+    </div>
+    <div class="autoShow">
+        <h5>wow, how quickly did that turn around?</h5>
+    </div>
+    <div class="autoShow">
+        <h5>What was Christian Horner saying it was?</h5>
+    </div>
+    <div class="autoShow">
+        <h5>The racing gods need to shine down on us.</h5>
+    </div>
+    <div class="autoShow">
+        <h5>They certainly did.</h5>
+    </div>
+    <div class="autoShow">
+        <h5>We need a miracle said Christian Horner.</h5>
+    </div>
+    <div class="autoShow">
+        <h5>The miracle arrived</h5>
+    </div>
+    <div class="autoShow">
+        <h5>Nicolas Latifi crashed</h5>
+    </div>
+    <div class="autoShow">
+        <h5>the safety car came out</h5>
+    </div>
+    <div class="autoShow">
+        <h5>the lapped cars were allowed to get out of the way</h5>
+    </div>
+    <div class="autoShow">
+        <h5>Verstappen pitted for fresher tires</h5>
+    </div>
+    <div class="autoShow">
+        <h5>and in the course of one racing lap</h5>
+    </div>
+    <div class="autoShow">
+        <h5>took the lead and kept it</h5>
+    </div>
+    <div class="autoShow">
+        <h6 class="max">MAX VERSTAPPEN!</h6>
+    </div>
+    <div class="autoShow">
+        <h6 class="max">YOU ARE THE WORLD CHAMPION!</h6>
+    </div>
+    <div class="autoShow">
+        <h6 class="max">THE WORLD CHAMPION!</h6>
+    </div>
+          
+    <script src="../js/tire.js"></script>
+    <script src="../js/commentary.js"></script>
+    <script src="../js/commentary-radio.js"></script>
+    <script src="../js/hamilton1.js"></script>
+    <script src="../js/verstappen3.js"></script>
+    <script src="../js/hamilton3.js"></script>
+    <script src="../js/verstappen4.js"></script>
+
+
+
+
+
+</body>
+</html>

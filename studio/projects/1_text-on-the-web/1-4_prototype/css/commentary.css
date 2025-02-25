@@ -1,0 +1,207 @@
+body {
+  background: black;
+  font-family: 'Formula1', sans-serif;
+  padding: 4em;
+  margin: 4em;
+}
+
+@font-face {
+  font-family: 'Formula1', sans-serif;
+  src: url('/fonts/Formula1-Display-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*circle*/
+
+#text {
+  color: white;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.tire {
+  position: relative;
+  height: 120vh;
+}
+
+.circle {
+  position: relative;
+}
+
+/*paragraph*/
+
+h1{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 120px;
+}
+
+h2{
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 80px;
+}
+
+h3{
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+}
+
+h4{
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 60px;
+  line-height: 100px;
+}
+
+h5{
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 60px;
+  line-height: 150px;
+}
+
+h6{
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 60px;
+  line-height: 100px;
+}
+
+.text-right{
+  animation: slide-right;
+  animation-timeline: view(40% 0%);
+}
+
+.max{
+  color: rgb(255, 49, 94);
+}
+
+.lewis{
+  color: teal;
+}
+
+@keyframes slide-right{
+  from{
+    margin-left: -100%;
+  }
+  to{
+    margin-left: 0;
+  }
+}
+
+.text-left{
+  animation: slide-left;
+  animation-timeline: view(40% 0%);
+}
+
+@keyframes slide-left{
+  from{
+    margin-right: -100%;
+  }
+  to{
+    margin-right: 0;
+  }
+}
+
+
+@media screen and (min-width: 900px) {
+  h2{
+  font-size: 200px;
+  }
+  h5{
+    font-size: 100px
+  }
+
+  h6{
+    font-size: 150px;
+    line-height: 220px;
+  }
+}
+
+
+/*header*/
+
+.logo-container {
+	position: relative;
+	
+	::before {
+		content:  "";
+		position: absolute;
+		width:    100%;
+		height:   4px;
+		background-color: #cf0000;
+		transform-origin: center center;
+		transform: scaleX( 0 );
+		
+		animation: line-animation 3s ease infinite alternate;
+	}
+	
+	h1 {
+		text-transform: uppercase;
+		animation: clip-path-reveal-1 3s ease infinite alternate;
+	}
+}
+
+@keyframes line-animation {
+	0% { transform: scaleX( 0 ); }
+	15% { transform: scaleX( 0 ); }
+	20%, 25% { transform: scaleX( 1 ); top: calc( 100% - 2px ); }
+	50% { transform: scaleX( 1 ); top: 0px; }
+	70% { transform: scaleX( 0.2 ); top: 0px; }
+	80%, 100% { transform: scaleX( 0.2 ); top: 0px; }
+}
+
+@keyframes clip-path-reveal-1 {
+	0%, 25% { clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%); }
+	50% { clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
+}
+
+/*screen*/
+
+@media screen and (min-width: 900px) {
+  .section{
+    margin-top: 10%;
+  }
+}
+
+
+/*reading-progress bar*/
+
+.reading-progress-bar-container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  background-color: black(19, 19, 66);
+  z-index: 999;
+}
+
+.reading-progress-bar {
+  height: 20px;
+  background-color:red;
+  animation-name: width;
+  animation-timeline: scroll(y);
+}
+
+@keyframes width {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
