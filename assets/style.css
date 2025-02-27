@@ -1,29 +1,29 @@
  /* main */
 
 html {
-	background: rgb(211, 196, 196);
-	color: white;
+	background: #efeae6;
 	margin: 3em;
 	font-family: "Playfair Display", serif;
+  text-decoration: none;
 }
   
 
 h1{
-	font-size: 50px;
-	text-align: center;
+    position: relative;
+    color: #AE8381;
+    text-align: center;
+    font-size: 90pt;
+    letter-spacing: 0.1cm;
 }
 
 h2{
-	font-size: 30px;
+	font-size: 50px;
+  text-align: center;
+  color: #ae9081;
 }
 
-button{
-	font-size: 20px;
-	padding: 2em;
-	border-radius: 6em;
-	border-color: transparent;
-	background-color: rgb(182, 137, 145);
-	text-align: center;
+h3{
+  font-size: 30px;
 }
 
 a{
@@ -40,7 +40,7 @@ a{
   
   .header a {
     float: left;
-    color: white;
+    color: #AE8381;
     text-align: center;
     padding: 12px;
     text-decoration: none;
@@ -56,7 +56,7 @@ a{
   
   .header a:hover {
     background-color: white;
-    color: white;
+    color: #AE8381;
   }
   
   .header-right {
@@ -65,3 +65,28 @@ a{
   
 
   
+
+.section-1{
+  box-sizing: 2em;
+  height: 400px;
+  background-color: rgb(169, 120, 88);
+  justify-content: center;
+  align-items: center;
+}
+
+/*button*/
+
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #AE8381;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: rgb(208, 157, 155)
+}
