@@ -1,0 +1,191 @@
+[
+    {
+      "colour": "White",
+      "emotion": "Love & Heartbreak",
+      "weather": "Snow",
+      "song": "Waltz from Swan Lake by Tchaikovsky",
+      "html": "swan-waltz.html"
+    },
+    {
+      "colour": "White",
+      "emotion": "Love & Heartbreak",
+      "weather": "Storm",
+      "song": "Swan Theme from Swan Lake by Tchaikovsky",
+      "html": "swan-theme.html"
+    },
+    {
+      "colour": "White",
+      "emotion": "Love & Heartbreak",
+      "weather": "Sunny",
+      "song": "Finale from Swan Lake by Tchaikovsky",
+      "html": "swan-finale.html"
+    },
+    {
+      "colour": "White",
+      "emotion": "Power",
+      "weather": "Snow",
+      "song": "Overture from Swan Lake by Tchaikovsky",
+      "html": "swan-overture.html"
+    },
+    {
+      "colour": "White",
+      "emotion": "Power",
+      "weather": "Storm",
+      "song": "Pas de Deux from Swan Lake by Tchaikovsky",
+      "html": "swan-pasdedeux.html"
+    },
+    {
+      "colour": "White",
+      "emotion": "Power",
+      "weather": "Sunny",
+      "song": "Pas de Deux from Giselle by Adolphe Adam",
+      "html": "giselle-pasdedeux.html"
+    },
+    {
+      "colour": "White",
+      "emotion": "Fear",
+      "weather": "Snow",
+      "song": "Giselle's Lament by Adolphe Adam",
+      "html": "giselle-lament.html"
+    },
+    {
+      "colour": "White",
+      "emotion": "Fear",
+      "weather": "Storm",
+      "song": "Grand Pas de Deux from Giselle by Adolphe Adam",
+      "html": "giselle-grandpasdedeux.html"
+    },
+    {
+      "colour": "White",
+      "emotion": "Fear",
+      "weather": "Sunny",
+      "song": "Finale from Giselle by Adolphe Ada",
+      "html": "giselle-finale.html"
+    },
+    {
+      "colour": "Black",
+      "emotion": "Love & Heartbreak",
+      "weather": "Snow",
+      "song": "Adagio from Giselle by Adolphe Adam",
+      "html": "giselle-adagio.html"
+    },
+    {
+      "colour": "Black",
+      "emotion": "Love & Heartbreak",
+      "weather": "Storm",
+      "song": "Dance of the Snowflakes from The Nutcracker by Tchaikovsky",
+      "html": "nutcracker-snowflakes.html"
+    },
+    {
+      "colour": "Black",
+      "emotion": "Love & Heartbreak",
+      "weather": "Sunny",
+      "song": "Waltz of the Flowers from The Nutcracker by Tchaikovsky",
+      "html": "nutcracker-flowers.html"
+    },
+    {
+      "colour": "Black",
+      "emotion": "Power",
+      "weather": "Snow",
+      "song": "Dance of the Sugar Plum Fairy from The Nutcracker by Tchaikovsky",
+      "html": "nutcracker-sugarplum.html"
+    },
+    {
+      "colour": "Black",
+      "emotion": "Power",
+      "weather": "Storm",
+      "song": "Chinese Dance from The Nutcracker by Tchaikovsky",
+      "html": "nutcracker-chinesedance.html"
+    },
+    {
+      "colour": "Black",
+      "emotion": "Power",
+      "weather": "Sunny",
+      "song": "Arabian Dance from The Nutcracker by Tchaikovsky",
+      "html": "nutcracker-arabiandance.html"
+    },
+    {
+      "colour": "Black",
+      "emotion": "Fear",
+      "weather": "Snow",
+      "song": "Russian Dance from The Nutcracker by Tchaikovsky",
+      "html": "nutcracker-russiandance.html"
+    },
+    {
+      "colour": "Black",
+      "emotion": "Fear",
+      "weather": "Storm",
+      "song": "Overture from The Nutcracker by Tchaikovsky",
+      "html": "nutcracker-overture.html"
+    },
+    {
+      "colour": "Black",
+      "emotion": "Fear",
+      "weather": "Sunny",
+      "song": "The Clock Dance from Coppelia by Delibes",
+      "html": "coppelia-clockdance.html"
+    },
+    {
+      "colour": "Pink",
+      "emotion": "Love & Heartbreak",
+      "weather": "Snow",
+      "song": "Doll's Dance from Coppelia by Delibes",
+      "html": "coppelia-dolldance.html"
+    },
+    {
+      "colour": "Pink",
+      "emotion": "Love & Heartbreak",
+      "weather": "Storm",
+      "song": "Pas de Deux from Coppelia by Delibes",
+      "html": "coppelia-pasdedeux.html"
+    },
+    {
+      "colour": "Pink",
+      "emotion": "Love & Heartbreak",
+      "weather": "Sunny",
+      "song": "Coppelia Overture by Delibes",
+      "html": "coppelia-overture.html"
+    },
+    {
+      "colour": "Pink",
+      "emotion": "Power",
+      "weather": "Snow",
+      "song": "Finale from Coppelia by Delibes",
+      "html": "coppelia-finale.html"
+    },
+    {
+      "colour": "Pink",
+      "emotion": "Power",
+      "weather": "Storm",
+      "song": "Miniature Overture from The Nutcracker by Tchaikovsky",
+      "html": "nutcracker-miniatureoverture.html"
+    },
+    {
+      "colour": "Pink",
+      "emotion": "Power",
+      "weather": "Sunny",
+      "song": "Grand Pas de Deux from The Nutcracker by Tchaikovsky",
+      "html": "nutcracker-grandpasdedeux.html"
+    },
+    {
+      "colour": "Pink",
+      "emotion": "Fear",
+      "weather": "Snow",
+      "song": "Dance of the Reed Flutes from The Nutcracker by Tchaikovsky",
+      "html": "nutcracker-reedflutes.html"
+    },
+    {
+      "colour": "Pink",
+      "emotion": "Fear",
+      "weather": "Storm",
+      "song": "Black Swan Pas de Deux from Swan Lake by Tchaikovsky",
+      "html": "swan-blackswan.html"
+    },
+    {
+      "colour": "Pink",
+      "emotion": "Fear",
+      "weather": "Sunny",
+      "song": "Coppelia's Grand Finale by Delibes",
+      "html": "coppelia-grandfinale.html"
+    }
+  ]

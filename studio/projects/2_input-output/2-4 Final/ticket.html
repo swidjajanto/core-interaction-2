@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>En Pointe</title>
+  <link rel="stylesheet" href="ticket.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Moirai+One&family=MonteCarlo&family=Parisienne&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poiret+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="output"></div>
+  <div class="ticket">
+    <div class="cutout left"></div>
+    <div class="cutout right"></div>
+    <div class="box">
+      <div class="controls">
+        <div class="controls-grid">
+  
+          <!-- One -->
+          <select name="colour">
+            <option value="White">White</option>
+            <option value="Black">Black</option>
+            <option value="Pink">Pink</option>
+          </select>
+  
+          <!-- Two -->
+          <select name="emotion">
+            <option value="Love & Heartbreak">Love & Heartbreak</option>
+            <option value="Power">Power</option>
+            <option value="Fear">Fear</option>
+          </select>
+  
+          <!-- Three -->
+          <select name="weather">
+            <option value="Snow">Snow</option>
+            <option value="Storm">Storm</option>
+            <option value="Sunny">Sunny</option>
+          </select>
+  
+          <!-- Submit -->
+          <button name="submit">Begin the Show</button>
+          
+        </div>
+      </div> 
+    </div>
+    <div class="divider"></div>
+    <div class="label">En Pointe</div>
+    <div class="barcode"></div>
+  </div>
+
+  <script src="entries.js" type="module"></script>
+
+</body>
+</html>

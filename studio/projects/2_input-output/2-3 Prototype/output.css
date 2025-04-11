@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+}
+
+iframe{
+    padding: 2em;
+    
+}
+.gradient-background-1 {
+    background: linear-gradient(128deg,#ffffff,#dfa0a0,#927070);
+    background-size: 180% 180%;
+    animation: gradient-animation 3s ease infinite;
+  }
+  
+  @keyframes gradient-animation-1 {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+.gradient-background-2 {
+    background: linear-gradient(96deg,#5c5491,#97b0f3,#d09f0b,#6d4371);
+    background-size: 240% 240%;
+    animation: gradient-animation 12s ease infinite;
+  }
+  
+  @keyframes gradient-animation-2 {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

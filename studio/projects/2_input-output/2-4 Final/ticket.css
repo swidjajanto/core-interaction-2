@@ -1,0 +1,196 @@
+body {
+    background-color: #a88787;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family:  "MonteCarlo", cursive;
+  }
+
+  .ticket {
+    background-color: #cda7a7;
+    width: 260px;
+    height: 520px;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .cutout {
+    position: absolute;
+    width: 20px;
+    height: 40px;
+    background-color: #a88787;
+    border-radius: 50%;
+    top: 65%;
+  }
+
+  .cutout.left {
+    left: -10px;
+  }
+
+  .cutout.right {
+    right: -10px;
+  }
+
+  .box {
+    background-color: white;
+    height: 60%;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+  }
+
+  .divider {
+    border-top: 1px dashed white;
+    margin: 15px 0;
+  }
+
+  .label {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 50px;
+    letter-spacing: 5px;
+  }
+
+  .barcode {
+    height: 40px;
+    width: 160px;
+    margin: 10px auto 0;
+    background: repeating-linear-gradient(
+  to right,
+  #d9a9a9 0px,   
+  #d9a9a9 2px,
+  #f4cccc 2px,
+  #f4cccc 4px,   
+  
+  #d9a9a9 4px,   
+  #d9a9a9 7px,
+  #f4cccc 7px,
+  #f4cccc 11px,  
+  
+  #d9a9a9 11px,  
+  #d9a9a9 15px,
+  #f4cccc 15px,
+  #f4cccc 19px,
+  
+  #d9a9a9 19px,  
+  #d9a9a9 21px,
+  #f4cccc 21px,
+  #f4cccc 25px,  
+  
+  #d9a9a9 25px,
+  #d9a9a9 28px,
+  #f4cccc 28px,
+  #f4cccc 32px
+);
+}
+
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 1em;
+    align-items: center;
+  }
+  
+  .custom-dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+    padding: 10px 16px;
+    border: 2px solid #e3e3e3;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #c29b9b;
+    background-color: white;
+    cursor: pointer;
+    font-family:  "MonteCarlo", cursive;
+    font-size: 20px;
+    transition: border-color 0.2s;
+  }
+  
+  .custom-dropdown:hover {
+    border-color: #c29b9b;
+  }
+  
+  .arrow {
+    font-size: 12px;
+    margin-left: 8px;
+    color: #e2cfcf;
+  }
+  
+
+button{
+    padding: 0.5em;
+    background-color: #d9b3b3;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    background-color: #c69b9b;
+  }
+
+  .controls {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .controls-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+  }
+  .controls-grid select {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #e3e3e3;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #c29b9b;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    font-size: 14px;
+    font-family: 'Playfair';
+  }
+  .controls-grid select:hover {
+    border-color: #c29b9b;
+  }
+  .controls-grid button {
+    width: 80%;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #d9b3b3;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    letter-spacing: 2px;
+    font-family: 'Playfair';
+  }
+  .controls-grid button:hover {
+    background-color: #c69b9b;
+  }

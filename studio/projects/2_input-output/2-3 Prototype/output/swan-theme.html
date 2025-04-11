@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>En Pointe</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #ac8989;
+      transition: background 0.5s ease;
+    }
+
+    #bg-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 1s ease;
+    }
+
+    .animation-layer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    .dynamic-element {
+      position: absolute;
+      pointer-events: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 1;
+      z-index: 20;
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0); opacity: 1; }
+      50% { transform: scale(1); opacity: 0.8; }
+      100% { transform: scale(1.5); opacity: 0; }
+    }
+    .pop { animation: pop 1.5s ease-out forwards; }
+    
+    .emoji {
+      font-size: 50px;
+      font-family: sans-serif;
+    }
+    
+    .circle {
+      width: 50px;
+      height: 50px;
+      background: rgba(190, 165, 165, 0.8);
+      border-radius: 50%;
+    }
+
+    .square {
+      width: 50px;
+      height: 50px;
+      background: rgba(255,200,200,0.8);
+    }
+    
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 30px solid transparent;
+      border-right: 30px solid transparent;
+      border-bottom: 60px solid rgba(234, 197, 162, 0.8);
+    }
+
+    .star {
+      width: 50px;
+      height: 50px;
+      background: rgba(197, 208, 234, 0.8);
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+
+    .polygon {
+      width: 50px;
+      height: 50px;
+      background: rgba(89, 125, 135, 0.8);
+      clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    }
+
+    .blob {
+      width: 50px;
+      height: 50px;
+      background: rgba(117, 160, 139, 0.8);
+      border-radius: 40% 60% 70% 30% / 30% 40% 60% 70%;
+    }
+
+    .diamond {
+      width: 50px;
+      height: 50px;
+      background: rgba(85, 154, 154, 0.8);
+      transform: rotate(45deg);
+    }
+
+    .hexagon {
+      width: 50px;
+      height: 50px;
+      background: rgba(185, 202, 185, 0.8);
+      clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    }
+   
+  </style>
+</head>
+<body>
+  <div id="bg-overlay"></div>
+  <div id="animationLayer" class="animation-layer"></div>
+  
+  <script>
+    function getRandomBackgroundGradient() {
+      const gradients = [
+        'linear-gradient(75deg, #d8e6f2, #6d8ba5)',
+        'linear-gradient(45deg, #e9f3f5, #bce9f2)',
+        'linear-gradient(80deg, #eaefe8, #cbd7c7)',
+        'linear-gradient(45deg, #71889c, #475e72)',
+        'linear-gradient(55deg, #76a5af, #4e7077)'
+      ];
+      return gradients[Math.floor(Math.random() * gradients.length)];
+    }
+   
+    const keyMap = {
+      q: { type: 'emoji', value: '⚡️', baseClass: 'emoji', animation: 'pop', action: 'element', bg: 'linear-gradient(45deg, #cceeff, #99ddff)' },
+      w: { type: 'emoji', value: '🩰', baseClass: 'emoji', animation: 'pop', action: 'element', bg: 'linear-gradient(45deg, #ffe6f2, #ffccd5)' },
+      e: { type: 'emoji', value: '🎵', baseClass: 'emoji', animation: 'pop', action: 'element', bg: 'linear-gradient(45deg, #d1c4e9, #b39ddb)' },
+      r: { type: 'emoji', value: '🎶', baseClass: 'emoji', animation: 'pop', action: 'element', bg: 'linear-gradient(45deg, #fce4ec, #f8bbd0)' },
+      t: { type: 'emoji', value: '💧', baseClass: 'emoji', animation: 'pop', action: 'element', bg: 'linear-gradient(45deg, #cceeff, #99ddff)' },
+      y: { type: 'emoji', value: '🦢', baseClass: 'emoji', animation: 'pop', action: 'element', bg: 'linear-gradient(45deg, #ffe6f2, #ffccd5)' },
+      u: { type: 'emoji', value: '🎵', baseClass: 'emoji', animation: 'pop', action: 'element', bg: 'linear-gradient(45deg, #d1c4e9, #b39ddb)' },
+      i: { type: 'emoji', value: '🎶', baseClass: 'emoji', animation: 'pop', action: 'element', bg: 'linear-gradient(45deg, #fce4ec, #f8bbd0)' },
+      o: { type: 'emoji', value: '🦢', baseClass: 'emoji', animation: 'pop', action: 'element', bg: 'linear-gradient(45deg, #cceeff, #99ddff)' },
+      p: { type: 'emoji', value: '🩰', baseClass: 'emoji', animation: 'pop', action: 'element', bg: 'linear-gradient(45deg, #ffe6f2, #ffccd5)' },
+      
+      a: { type: 'shape', shape: 'circle', baseClass: 'circle', animation: 'pop', action: 'element', bg: 'linear-gradient(45deg, #ff4a50, #f9d423)' },
+      s: { type: 'shape', shape: 'square', baseClass: 'square', animation: 'pop', action: 'element', bg: 'linear-gradient(45deg, #6a11cb, #2575fc)' },
+      d: { type: 'shape', shape: 'triangle', baseClass: 'triangle', animation: 'pop', action: 'element', bg: 'linear-gradient(45deg, #f7971e, #ffd200)' },
+      f: { type: 'shape', shape: 'star', baseClass: 'star', animation: 'pop', action: 'element', bg: 'linear-gradient(45deg, #00c6ff, #0072ff)' },
+      g: { type: 'shape', shape: 'polygon', baseClass: 'polygon', animation: 'pop', action: 'element', bg: 'linear-gradient(45deg, #ff4a50, #f9d423)' },
+      h: { type: 'shape', shape: 'blob', baseClass: 'blob', animation: 'pop', action: 'element', bg: 'linear-gradient(45deg, #6a11cb, #2575fc)' },
+      j: { type: 'shape', shape: 'diamond', baseClass: 'diamond', animation: 'pop', action: 'element', bg: 'linear-gradient(45deg, #f7971e, #ffd200)' },
+      k: { type: 'shape', shape: 'circle', baseClass: 'circle', animation: 'pop', action: 'element', bg: 'linear-gradient(45deg, #ff4a50, #f9d423)' },
+      l: { type: 'shape', shape: 'hexagon', baseClass: 'hexagon', animation: 'pop', action: 'element', bg: 'linear-gradient(45deg, #ff4a50, #f9d423)' },
+      
+      z: { action: 'bg' },
+      x: { action: 'bg' },
+      c: { action: 'bg' },
+      v: { action: 'bg' },
+      b: { action: 'bg' },
+      n: { action: 'bg' },
+      m: { action: 'bg' }
+    };
+    
+    // event listener for keydown
+    document.addEventListener('keydown', (e) => {
+      const key = e.key.toLowerCase();  
+     
+      const mapping = keyMap[key];
+      console.log("Key pressed:", key, mapping);
+      
+      // if a key with no function is pressed
+      if (!mapping) return;
+      
+      // if a bottom row key is pressed
+      if (mapping.action === 'bg') {
+        const overlay = document.getElementById('bg-overlay');
+        const newGradient = getRandomBackgroundGradient();
+        overlay.style.background = newGradient;
+        document.body.style.background = newGradient;
+        overlay.style.opacity = 1;
+        console.log("Bottom-row key pressed; updated background to:", newGradient);
+        return;  
+      }
+      
+      // if a middle or top row key is pressred
+      document.body.style.background = mapping.bg;
+      
+      // random location for elements
+      const x = Math.random() * window.innerWidth;
+      const y = Math.random() * window.innerHeight;
+      createDynamicElement(mapping, x, y);
+    });
+    
+    // new div 
+    function createDynamicElement(mapping, x, y) {
+      const el = document.createElement('div');  
+      el.classList.add('dynamic-element', mapping.baseClass, mapping.animation); 
+    
+    // base size of elements
+    const baseSize = 50;  
+    let width, height;
+      
+      // fixed dimensions
+      if (mapping.baseClass.includes("fixed")) {
+        const fixed = {
+          "fixed": { width: 100, height: 4 }
+        };
+        
+        const dims = fixed[mapping.baseClass] || { width: 100, height: 4 };
+        width = dims.width;
+        height = dims.height;
+        el.style.width = width + 'px';
+        el.style.height = height + 'px';
+      } else {
+
+        // element scaling animation
+        const scaleFactor = Math.random() * 2.5 + 0.5;  
+        width = baseSize * scaleFactor;
+        height = baseSize * scaleFactor;
+        el.style.width = width + 'px';
+        el.style.height = height + 'px';
+
+        // scaling font size of emojis
+        if (mapping.type === 'emoji') {
+          el.textContent = mapping.value;
+          el.style.fontSize = width + 'px';
+        }
+      }
+      
+      // add elements to animation layer
+      const container = document.getElementById('animationLayer');
+      container.appendChild(el);
+      
+      // centers elements
+      el.style.left = (x - width / 2) + 'px';
+      el.style.top = (y - height / 2) + 'px';
+      
+      // removing elements
+      setTimeout(() => { el.remove(); }, 1500);
+    }
+  </script>
+</body>
+</html>

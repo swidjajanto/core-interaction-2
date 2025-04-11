@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family:  "MonteCarlo", cursive;
+    background-color: #a88787;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  h1 {
+    font-size: 300px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  a {
+    padding: 0.5em;
+    background-color: #d9b3b3;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  a:hover {
+    background-color: #c69b9b;
+  }
+  
+ 
